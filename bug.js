@@ -1,0 +1,1 @@
+This bug occurs when using the Expo `Camera` API with a custom `onBarCodeScanned` function.  The problem is that even if you set `barCodeScannerSettings` and  `onBarCodeScanned` to handle specific formats like QR codes, it will also detect other bar code formats (e.g., UPC-A, EAN-8) causing unexpected behavior.
